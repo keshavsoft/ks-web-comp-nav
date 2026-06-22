@@ -24,7 +24,7 @@
     ".": "./index.js"
   },
   "bin": {
-    "tailwind-header-dom": "./bin/cli.js"
+    "ks-web-comp-nav": "./bin/cli.js"
   },
   "files": [
     "bin/",
