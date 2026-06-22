@@ -4,9 +4,9 @@ export default {
     build: {
         lib: {
             entry: "src/nav.js",
-            name: "KSHeader",
+            name: "ksCompNav",
             formats: ["umd"],
-            fileName: () => `${templateVersion}/ksheader.js`
+            fileName: () => `${templateVersion}/ksCompNav.js`
         },
         outDir: "Public",
         emptyOutDir: false
