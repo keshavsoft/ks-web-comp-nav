@@ -24,6 +24,10 @@ customElements.define(
     KSNav
 );
 
+window.KSNav = KSNav;
+
+console.log("KSNav v3 loaded to DOM");
+
 // export default KSNav;
 // export {
 //     navDefaults,
