@@ -3,7 +3,7 @@ import { templateVersion } from "./src/version.js";
 export default {
     build: {
         lib: {
-            entry: "src/header.js",
+            entry: "src/nav.js",
             name: "KSHeader",
             formats: ["umd"],
             fileName: () => `${templateVersion}/ksheader.js`
