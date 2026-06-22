@@ -29,3 +29,6 @@ customElements.define(
 //     navDefaults,
 //     navUsage
 // };
+
+
+export default {};
