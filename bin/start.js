@@ -1,7 +1,6 @@
 import parseInput from "./core/parseInput.js";
 import showUsage from './core/showUsage.js';
 
-// import resolveCommand from "./core/resolveCommand.js";
 import commandToRun from "./commands/nav.js";
 
 import pkg from '../../package.json' with { type: 'json' };
