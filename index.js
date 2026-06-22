@@ -1,8 +1,16 @@
-import getLatestVersion from "./bin/core/getLatestVersion.js";
+import getLatestVersion from "./bin/commands/steps/getLatestVersion.js";
 
 const load = async (cmd) => {
-    const v = getLatestVersion();
-    return (await import(`./bin/${v}/commands/template//${cmd}.js`)).default;
+    const v = getLatestVersion;
+    console.log("v : ", v);
+
+    // return (await import(`./bin/commands/template/${v}/index.js`));
+    const navDefaults = (await import(`./bin/commands/template/${v}/navDefaults.js`)).default;
+    const navUsage = (await import(`./bin/commands/template/${v}/navUsage.js`)).default;
+
+    return {
+        navDefaults, navUsage
+    };
 };
 
-export const express = async (...a) => (await load("express"))(...a);
+export default load;

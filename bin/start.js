@@ -3,7 +3,7 @@ import showUsage from './core/showUsage.js';
 
 import commandToRun from "./commands/nav.js";
 
-import pkg from '../../package.json' with { type: 'json' };
+import pkg from '../package.json' with { type: 'json' };
 
 const version = pkg.version;
 
