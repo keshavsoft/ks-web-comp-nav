@@ -16,6 +16,7 @@ export default ({
     if (showLog) {
         console.log(`Resolving folder name..., folderName : ${folderName}`);
     };
+    console.log("folderName : ", folderName);
 
     const resolvedFolderName = resolveFolderName({
         name: folderName
